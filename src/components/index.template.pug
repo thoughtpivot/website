@@ -1,0 +1,115 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    | &#x9;&#x9;
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    | &#x9;&#x9;
+    meta(name='description', content='Thoughtpivot')
+    | &#x9;&#x9;
+    meta(name='author', content='ispyhumanfly')
+    | &#x9;&#x9;
+    title Thoughtpivot
+    // Stylesheets
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel='stylesheet')
+
+    link(href='./css/bootstrap.min.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/font-awesome.min.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/bootstrapValidator.min.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/ladda-themeless.min.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/animate.min.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/owl.carousel.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/owl.theme.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/app.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='../settings-panel.css', rel='stylesheet')
+    // Favicon
+    link(rel='shortcut icon', href='./img/favicon/favicon.ico', type='image/x-icon')
+    | &#x9;&#x9;
+    link(rel='icon', href='./img/favicon/favicon.ico', type='image/x-icon')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='js/html5shiv.js')
+      | &#x9;&#x9;&#x9;
+      script(src='js/respond.min.js')
+
+    style
+        include:less:clean-css index.style.less
+
+  body
+    // Preloader
+    #preloader
+      #status.text-center
+        .spinner
+          .rect1
+          .rect2
+          .rect3
+          .rect4
+          .rect5
+    // Main
+    section#home.main.text-center.parallax-window(data-parallax='scroll', data-image-src='./img/background/home.jpg')
+      .page
+        .wrapper
+          .container
+            // img(src='./img/logo/logo.png', alt='Logo')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            h1.heading Thoughtpivot
+            h3 coming soon...
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+
+            .row
+              #countdown
+            // Subscription form
+            form#signupForm.form-inline.signup(action='php/signup-form.php', role='form')
+              .form-group
+                input.form-control(type='email', name='signup_email', placeholder='Email address')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .form-group
+                button.btn.btn-theme.ladda-button(type='submit', data-style='expand-left')
+                  span.ladda-label Get notified!
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            footer.text-center
+              .social
+                a.btn.btn-theme(href='https://www.facebook.com/Thoughtpivot', target='_blank')
+                  i.fa.fa-facebook
+                a.btn.btn-theme(href='https://twitter.com/thoughtpivot', target='_blank')
+                  i.fa.fa-twitter
+                a.btn.btn-theme(href='https://plus.google.com/communities/104041717295607858016', target='_blank')
+                  i.fa.fa-google-plus
+                a.btn.btn-theme(href='#')
+                  i.fa.fa-linkedin
+
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='./js/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='./js/bootstrap.min.js')
+    | &#x9;&#x9;
+    script(src='./js/jquery.backstretch.min.js')
+    | &#x9;&#x9;
+    script(src='./js/jquery.countdown.min.js')
+    | &#x9;&#x9;
+    script(src='./js/bootstrapValidator.min.js')
+    | &#x9;&#x9;
+    script(src='./js/validator/emailAddress.js')
+    | &#x9;&#x9;
+    script(src='./js/spin.min.js')
+    | &#x9;&#x9;
+    script(src='js/ladda.min.js')
+    | &#x9;&#x9;
+    script(src='./js/retina.min.js')
+    | &#x9;&#x9;
+    script(src='./js/wow.min.js')
+    | &#x9;&#x9;
+    script(src='./js/owl.carousel.min.js')
+    | &#x9;&#x9;
+    script(src='./js/parallax.min.js')
+    | &#x9;&#x9;
+    script(src='./js/init.js')

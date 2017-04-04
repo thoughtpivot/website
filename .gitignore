@@ -1,0 +1,8 @@
+node_modules
+typings
+.vscode
+src/cache
+src/logs
+src/theme
+.DS_Store
+dump.rdb
